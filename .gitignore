@@ -1,0 +1,15 @@
+# Dependencias y Entorno
+node_modules/
+.env
+.env.local
+backend/.env
+
+# Build outputs
+frontend/dist/
+*.log
+
+# IDE & SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

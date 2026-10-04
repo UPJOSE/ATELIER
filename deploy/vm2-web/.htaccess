@@ -1,0 +1,19 @@
+# ====================================================================
+# .htaccess PARA SERVIR REACT SPA Y PROTEGER RUTAS
+# ====================================================================
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # No interceptar llamadas dirigidas al backend /api
+    RewriteRule ^api/ - [L]
+
+    # Servir archivos físicos existentes directamente (css, js, imágenes)
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Redirigir el resto de rutas a index.html para React Router
+    RewriteRule ^ index.html [L]
+</IfModule>
