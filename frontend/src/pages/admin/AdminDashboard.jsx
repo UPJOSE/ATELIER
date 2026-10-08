@@ -28,7 +28,7 @@ export default function AdminDashboard() {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2.5rem', flexWrap: 'wrap', gap: '1rem' }}>
         <div>
           <span className="badge badge-info" style={{ marginBottom: '0.4rem' }}>Panel de Administración</span>
-          <h1 style={{ fontFamily: 'var(--font-serif)', fontSize: '2.4rem' }}>Dashboard Ejecutivo</h1>
+          <h1 style={{ fontFamily: 'var(--font-serif)', fontSize: '2.4rem' }}>Tablero</h1>
           <p style={{ color: '#64748b', fontSize: '0.9rem' }}>Métricas en tiempo real computadas desde PostgreSQL 16 (VM1)</p>
         </div>
 

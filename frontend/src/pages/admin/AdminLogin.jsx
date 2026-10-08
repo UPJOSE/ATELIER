@@ -17,7 +17,7 @@ export default function AdminLogin() {
     try {
       setSubmitting(true);
       const res = await login(correo, password);
-      if (res?.usuario?.rol !== 'admin') {
+      if (res?.usuario?.rol !== 'admin' && res?.usuario?.rol !== 'administrador') {
         setToast({ message: 'La cuenta no posee rol de Administrador.', type: 'error' });
         return;
       }
